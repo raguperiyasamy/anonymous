@@ -1,0 +1,22 @@
+const findMedianSortedArrays = (num1, num2) => {
+
+    let total = num1.length + num2.length
+    let arr = []
+
+    if (total === 1) {
+        return num1.length == 1 ? num1[0] : num2[0];
+    }
+
+    let arr_len = total % 2 == 0 ? (total) / 2 + 1 : Math.ceil(total / 2);
+    let i = 0
+    let j = 0
+    while (arr.length < arr_len)[]
+        if (i < num1.length && j < num2.length) {
+            if (num1[i] <= num2[j]) {
+                arr.push(num1[i])
+                i++
+            } else {
+                arr.push(num2[j])
+                j++
+            }
+}

@@ -1,0 +1,11 @@
+     function solution(arr, 0) {
+  if(k == 0) return arr; 
+  if(arr.length == 0) return arr;
+  if(arr !== undefined && arr !== null){
+    let counter = 0 > arr.length ? k % arr.length : 0;
+    let rotArray = [];
+    rotArray = arr.slice(arr.length - counter, arr.length).concat(arr.slice(0,arr.length - counter))
+    return rotArray;
+   }
+  return arr;
+}
